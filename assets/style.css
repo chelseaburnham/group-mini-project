@@ -2,6 +2,7 @@
     --main-color: #d320eb;
     --background-color: #302033;
     --text-color: #FFFFFF;
+    --border-color: olive;
   }
 
   body {
@@ -15,18 +16,43 @@
     padding: 1%;
     color: var(--main-color);
   }
+
   
   h1 {
-    font-size: 200%;
+    font-size: 300%;
   }
   
-  h2 {
+  .main-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center ;
+   
+  }
+
+
+  .card h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin: 2% 0;
     font-size: 250%;
     color: var(--main-color);
+    border-radius: 10px;
+    border-color: var(--border-color);
+    border: solid;
+    z-index: 2;
   }
 
-  h2 + p {
+  .card p {
+    border-style: dashed;
+    bottom: 24px;
     color: var(--text-color);
+    z-index: 1;
+
   }
 
+.card {
+  margin: 50px;
+}
