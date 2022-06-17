@@ -1,0 +1,32 @@
+:root {
+    --main-color: #d320eb;
+    --background-color: #302033;
+    --text-color: #FFFFFF;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+  }
+  
+  header {
+    text-align: center;
+    padding: 1%;
+    color: var(--main-color);
+  }
+  
+  h1 {
+    font-size: 200%;
+  }
+  
+  h2 {
+    margin: 2% 0;
+    font-size: 250%;
+    color: var(--main-color);
+  }
+
+  h2 + p {
+    color: var(--text-color);
+  }
+
