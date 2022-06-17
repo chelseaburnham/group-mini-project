@@ -65,6 +65,13 @@ h2 {
     color: var(--text-color);
 }
 
+.box {
+   border: solid;
+   border-color: var(--main-color);
+   background-image: linear-gradient(white 0%, var(--main-color) 100%);
+   top
+}
+
 @media screen and (max-width: 700px) {
     .card h2 {
         color: var(--border-color);
