@@ -1,58 +1,72 @@
 :root {
     --main-color: #d320eb;
     --background-color: #302033;
+    --test-color: #ff0000;
     --text-color: #FFFFFF;
     --border-color: olive;
-  }
+}
 
-  body {
+body {
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
-  }
-  
-  header {
+}
+
+header {
     text-align: center;
     padding: 1%;
     color: var(--main-color);
-  }
+}
 
-  
-  h1 {
+
+h1 {
     font-size: 300%;
-  }
-  
-  .main-card {
+}
+
+.main-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center ;
-   
-  }
+    align-items: center;
 
+}
 
-  .card h2 {
+h2 {
+    z-index: 2;
+}
+
+.card {
+    margin: 50px;
+}
+
+.card h2 {
+    width: 250px;
+    position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
-    margin: 2% 0;
-    font-size: 250%;
+    margin: auto;
+    font-size: 300%;
     color: var(--main-color);
     border-radius: 10px;
-    border-color: var(--border-color);
+    /* border-color: var(--border-color); */
+    background-color: var(--background-color);
     border: solid;
-    z-index: 2;
-  }
+}
 
-  .card p {
+.card p {
+    margin: auto;
+    border-width: 6px;
+    position: relative;
+    padding: 120px;
     border-style: dashed;
     bottom: 24px;
     color: var(--text-color);
-    z-index: 1;
+}
 
-  }
-
-.card {
-  margin: 50px;
+@media screen and (max-width: 700px) {
+    .card h2 {
+        color: var(--border-color);
+    }
 }
